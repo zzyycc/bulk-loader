@@ -25,6 +25,9 @@ bulkLoader.addEventListener(BulkLoader.COMPLETE, onCompleteHandler);
 // event fired when loading progress has been made:
 bulkLoader.addEventListener(BulkLoader.PROGRESS, onProgressHandler);
 
+// start loading all items
+bulkLoader.start();
+
 function onProgressHandler(evt : ProgressEvent) : void{
     trace("Loaded" , evt.bytesLoaded," of ",  evt.bytesTotal);
 }
@@ -50,6 +53,7 @@ var mXML : XML = mainLoader.getXML("my_xml_file.xml");
 var mXML : XML = BulkLoader.getLoader("main loading").getXML("my_xml_file.xml");
 }}}
 
+ 
  
  
  
