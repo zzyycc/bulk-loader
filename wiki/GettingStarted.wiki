@@ -1,0 +1,54 @@
+#the most basic usage
+
+= Getting Started =
+
+A quick how to guide to getting started with _BulkLoader_.
+
+
+= The basics =
+
+{{{
+import br.com.stimuli.loading.BulkLoader;
+
+/* instantiate a BulkLoader with a name : a way to reference this instance from another classes without having to set a expolicit reference on many places*/
+var bulkLoader : BulkLoader = new BulkLoader("main loading");
+// add items to be loaded
+bulkLoader.add("my_xml_file.xml");
+bulkLoader.add("main.swf");
+// you can also use a URLRequest object
+var backgroundURL : URLRequest = new URLRequest("background.jpg");
+bulkLoader.add(backgroundURL);
+
+// add event listeners for the loader itself :
+// event fired when all items have been loaded
+bulkLoader.addEventListener(BulkLoader.COMPLETE, onCompleteHandler);
+// event fired when loading progress has been made:
+bulkLoader.addEventListener(BulkLoader.PROGRESS, onProgressHandler);
+
+function onProgressHandler(evt : ProgressEvent) : void{
+    trace("Loaded" , evt.bytesLoaded," of ",  evt.bytesTotal);
+}
+
+function onCompleteHandler() : void{
+	trace("All items are loaeded and ready to consume");
+	// grab the main movie clip:
+	var mainMovie : MovieClip = bulkLoader.getMovieClip("main.swf");
+	// Get the xml object:
+	var mXML : XML = bulkLoader.getXML("my_xml_file.xml");
+	// grab the bitmap for the background image by a string:
+	var myBitmap : Bitmap = bulkLoader.getBitmap("background.jpg");
+	// grab the bitmap for the background image using the url rquest object:
+	var myBitmap : Bitmap = bulkLoader.getBitmap(backgroundURL);
+}
+
+// In any other class you can access those assets without having to pass around references to the bulkLoader instance.
+// In another class  you get get a reference to the "main loading" bulkLoader:
+var mainLoader : BulkLoader = BulkLoader.getLoader("main loading");
+// now grab the xml:
+var mXML : XML = mainLoader.getXML("my_xml_file.xml");
+// or shorter:
+var mXML : XML = BulkLoader.getLoader("main loading").getXML("my_xml_file.xml");
+}}}
+
+ 
+ 
