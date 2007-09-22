@@ -1,8 +1,8 @@
-#summary One-sentence summary of this page.
+#summary Road map
 
 = Project Status =
 
-Experimental release. A few features have to be more thoughourly tested.
+This is an experimental release. A few features need better testing.
 
 
 = Details =
@@ -13,6 +13,7 @@ If you find a bug, please let me know using the [http://code.google.com/p/bulk-l
 
 
 
+ 
  
  
  
