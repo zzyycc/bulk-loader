@@ -1,4 +1,4 @@
-#the most basic usage
+#summary quick and dirty how to
 
 = Getting Started =
 
@@ -50,5 +50,6 @@ var mXML : XML = mainLoader.getXML("my_xml_file.xml");
 var mXML : XML = BulkLoader.getLoader("main loading").getXML("my_xml_file.xml");
 }}}
 
+ 
  
  
