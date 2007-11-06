@@ -1,0 +1,10 @@
+#summary The laundry list
+
+===Testing===
+  * memory management: check clearing works as expected
+  * creation of loading types at run time
+
+  
+===Features===
+  * Speed meter
+  
