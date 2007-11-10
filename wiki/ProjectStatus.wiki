@@ -3,7 +3,7 @@
 
 = Project Status =
 
-I've used !BulkLoader in a cuple of projects. It's still under development but can be considered to be stable and reliable. 
+I've used !BulkLoader in a couple of projects. It's still under development but can be considered to be stable and reliable. 
 
 
 = Details =
