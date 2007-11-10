@@ -1,8 +1,9 @@
 #summary Road map
+#labels Featured,Phase-Design
 
 = Project Status =
 
-This is an experimental release. A few features need better testing.
+I've used !BulkLoader in a cuple of projects. It's still under development but can be considered to be stable and reliable. 
 
 
 = Details =
