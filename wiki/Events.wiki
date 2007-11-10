@@ -1,4 +1,5 @@
 #summary Understanding events
+#labels Phase-Implementation
 
 BulkLoader events are divided into two categories:
   * Events for all assets as a group.
