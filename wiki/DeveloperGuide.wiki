@@ -10,6 +10,6 @@ A more detailed guide can be found at the goolecode wiki:
   * HowToUseEvents : lists and explains what events are fired for each item individually or for all items as a group.
   * AcessingLoadedContents : how to fetch and use your assets.
   * ReportingLoadingProgress: explains different methods for displaying loading progress.
-  * Types : what content types are available and how to use them. (coming soon)
+  * UsingTypes : what content types are available and how to use them. (coming soon)
   * MemoryManagment: how to remove items and free memory (coming soon).
   * CustomizingLogging: BulkLoader has a flexible and plugabble logging feature.
