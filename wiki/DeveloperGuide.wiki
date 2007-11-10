@@ -1,5 +1,5 @@
 #summary How to learn the features of BulkLoader
-#labels Phase-Implementation
+#labels Phase-Implementation,Featured
 
 If you are getting started, the GettingStarted will get you up and running in no time.
 
