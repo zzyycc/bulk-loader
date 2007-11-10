@@ -1,0 +1,8 @@
+#summary People who have helped to make BulkLoader.getProgress() increase.
+#labels Featured
+
+= Many thanks to =
+
+  * *Igor Almeida*: my coworker who has been a thorough beta tester. A couple of months ago he wrote a loading manager class that, while has little resemblance to BulkLoader, provided many insights and a good road map of what works (and what doesn't). He also provided valuable feedback and bug reports.
+
+  * [http://www.zeh.com.br/ Zeh]: in long emails Zeh has given valuable ideas and discussed a few key issues Having Zeh give you design ideas is (to steal a phrase from [http://www.paulgraham.com/ Paul Graham]) like having Mick Jagger playing on your son's Bar Mitzvah. 
