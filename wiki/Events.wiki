@@ -1,0 +1,110 @@
+#summary Understanding events
+
+BulkLoader events are divided into two categories:
+  * Events for all assets as a group.
+  * Events for individual items.
+
+== Events for all assets as a group == 
+These events listeners are always added to the BulkLoader instance and relate to items added as a group.
+
+=== Complete === 
+An event of name "complete" (BulkLoader.COMPLETE or Event.COMPLETE) is fired when all items have finished loading.
+The event type is a BulkProgressEvent (which subclasses ProgressEvent), so your event handler can receive a Event, ProgressEvent or a BulkProgressEvent object. Example:
+{{{
+var bulkInstance = new BulkLoader("main");
+bulkInstance.add("main.swf");
+bulkInstance.add("config.xml");
+bulkInstance.add("background.jpg");
+background.addEventListener(BulkLoader.COMPLETE, onAllLoaded);
+
+function onAllLoaded(evt : BulkProgressEvent):void{
+    // all items have been loaded!
+    trace(evt.loadedPercent) ; // percentage will be 1
+    var bg : Bitmap = bulkInstance.getBitmap("background.jpg");
+    addChild(bg);
+}
+}}}
+
+A few observations about the complete event:
+  *  If any item fails to load this event will never fire.
+  * If you add an item to the same BulkLoader instance after the complete event has fired, bulk loader will load the new item and when it's loaded will fire the complete event again.
+  * Before fireing the complete event, BulkLoader will always fire a progress event where all items are loaded.
+
+== Progress == 
+When any asset fires a progress event, BulkLoader will fire the progress (BulkLoader.PROGRESS, ProgressEvent.PROGRESS) event.
+The event name is : "progress" (BulkLoader.PROGRESS, ProgressEvent.PROGRESS).
+The event type is a BulkProgressEvent). See the ReportingLoadingStatus page for more information.
+
+== Error == 
+If any of the assets fail to load, BulkLoader will fire an "error" event.
+
+The event name is "error" (BulkErrorEvent.ERROR).
+The event type is BulkErrorEvent. This event has an "error" property that is an array with all the LoadingItem instances that have failed to load on this bulk loader instance.
+
+Simple example:
+{{{
+bulkInstance.addEventListener(BulkLoader.ERROR,onError);
+
+function onError(evt : BulkErrorEvent ) : void{
+	trace("an error ocurred when loading");
+	for each (var loadingItem in evt.errors){
+    	 trace(loadingItem, "has failed to load");
+	}
+}
+}}}
+
+The error event is only fired after the item has the number of retries especified on the maxRetries option (AvailableOptions#maxTries)
+
+
+== Events for individual items ==
+Besides listening for events on all items as a whole, you can listen to event for each item.
+
+To add an event for an item, first grab a reference to that item:
+{{{
+var bulkInstance = new BulkLoader("main");
+bulkInstance.add("main.swf");
+bulkInstance.add("background.jpg", {id:"bg"});
+
+// add an event for the background item by the id:
+bulkInstance.get("bg").addEventListener(...);
+// or by the url:
+bulkInstance.get("background.jpg").addEventListener(...);
+}}}
+
+The folowing events are available:
+
+== Complete ==
+An event of name "complete" (BulkLoader.COMPLETE or Event.COMPLETE) is fired when an item has finished loading (and succeeded).
+The event type is  Event.
+
+This code will attach a "background" jpeg as soon as that jpeg is loaded but before all items have been loaded:
+{{{
+var bulkInstance = new BulkLoader("main");
+bulkInstance.add("main.swf");
+bulkInstance.add("background.jpg", {id:"bg"});
+
+// add an event for the background item by the id:
+bulkInstance.get("bg").addEventListener(...);
+// or by the url:
+bulkInstance.get("background.jpg").addEventListener(Event.COMPLETE, onBackgroundLoaded);
+
+function onBackgroundLoaded(evt : Event) : void{
+     // the background is loaded, you can get now attach it:
+    var bgBitmap : Bitmap = bulkInstance.getBitmap("background.jpg");
+    addChild(bgBitmap);
+}
+}}}
+
+== Error == 
+An event of name "error" (BulkLoader.ERROR ) is fired when an item has failed to load.
+The event type is  BulkErrorEvent.
+
+== Progress == 
+An event of name "progress" (ProgressEvent.PROGRESS ) is fired when the player has received more content for that item.
+The event type is ProgressEvent.
+
+== HttpStatus == 
+You can also listen for HTTPStatusEvent for each item. Although the player is not very reliable on informing this, it can be useful.
+
+An event of name "httpStatus" (BulkLoader.HTTP_STATUS  ) is fired when an item has failed to load.
+The event type is  HTTPStatusEvent.
