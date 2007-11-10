@@ -12,4 +12,4 @@ A more detailed guide can be found at the goolecode wiki:
   * ReportingLoadingProgress: explains different methods for displaying loading progress.
   * Types : what content types are available and how to use them. (coming soon)
   * MemoryManagment: how to remove items and free memory (coming soon).
-  * Logging: BulkLoader has a flexible and plugabble logging feature (coming soon).
+  * Logging: BulkLoader has a flexible and plugabble logging feature.
