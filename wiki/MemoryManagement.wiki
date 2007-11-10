@@ -1,0 +1,42 @@
+#summary Understanding memory management
+#labels Phase-Implementation
+
+Memory management can be pretty tricky to get right. If you aren't careful, you will consume more and more memory each item you load. If your website loads many items, this can become an issue.
+
+== How To Clear Memory == 
+There are several ways you can tell BulkLoader to release memory. You can do it for an item or an entire BulkLoader instance.
+
+=== Use "clearMemory" ===
+All functions that fetch content (see AcessingLoadedContents) accept a second optional parameter, a boolean clearMemory. The general form is:
+{{{
+bulkLoaderInstance.getContentXXX(itemKey, clearMemory);
+}}}
+After fetching some content with clearMemory set to true, bulk loader will remove the object from memory, and any subsequent attempts to fetch that same object will fail.
+
+=== Use "remove" === 
+You can tell bulk loader to remove an item with the method remove:
+{{{
+bulkLoaderInstance.remove(anItemKey);
+}}}
+
+You can remove an item at any time.
+
+=== Use "removeAll" ===
+You can tell bulk loader to remove all item in an instance:
+{{{
+bulkLoaderInstance.removeAll(anItemKey);
+}}}
+
+You can remove all item at any time.
+
+=== Use "removeAllLoaders" ===
+You can clear all instances of BulkLoader with the static method:
+{{{
+BulkLoader.removeAllLoaders();
+}}}
+
+=== Gotchas ===
+Because users can attach event listeners for individual items, if you do and do not use a weak reference you might keep this item in memory, even if you clear it with any of the above techniques.
+Also, event listeners attached to BulkLoader instances might not allow removeAll and removeAllLoaders to actually clear memory.
+
+For this reason it's recommended either the usage of weak references or to manually remove the listener once you are done with it.
