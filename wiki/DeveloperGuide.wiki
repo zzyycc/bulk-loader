@@ -11,5 +11,5 @@ A more detailed guide can be found at the goolecode wiki:
   * AcessingLoadedContents : how to fetch and use your assets.
   * ReportingLoadingProgress: explains different methods for displaying loading progress.
   * UsingTypes : what content types are available and how to use them.
-  * MemoryManagment: how to remove items and free memory (coming soon).
+  * MemoryManagement: how to remove items and free memory (coming soon).
   * CustomizingLogging: BulkLoader has a flexible and plugabble logging feature.
