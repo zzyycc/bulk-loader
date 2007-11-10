@@ -1,4 +1,5 @@
 #summary quick and dirty how to
+#labels Featured,Phase-Implementation
 
 = Getting Started =
 
