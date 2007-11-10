@@ -12,9 +12,10 @@ Using BulkLoader is simple, the workflow is very close to how you'd handle any l
   # retrieving content
 
 = Creating a BulkLoader instance: =
+{{{
 // creates a BulkLoader instance with a name of "main-site", that can be used to retrieve items without having a reference to this instance
 var loader : BulkLoader = new BulkLoader("main-site");
-
+}}}
 = Add urls to load: =
 {{{
 // simplest case:
@@ -49,8 +50,8 @@ loader.addEventListener(BulkLoader.PROGRESS, onAllProgress);
 loader.addEventListener(BulkLoader.ERROR, onAllError);                                      
 // you can also listen to events in individual items               
 // this will fire as soon as the item registred with the id of "bg" is done loading (even if there are other items to load)
-loader.get("bg").addEventListener(Event.COMPLETE,onBackgroundLoader)
-// this will only trigged if the config.xml laoding fails:
+loader.get("bg").addEventListener(Event.COMPLETE,onBackgroundLoaded)
+// this will only trigged if the config.xml loading fails:
 loader.get("data/config.xml").addEventListener(BulkLoader.ERROR, onXMLFailed)
 }}}
 = Starting the loading operation: =
