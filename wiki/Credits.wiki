@@ -1,6 +1,9 @@
 #summary People who have helped to make BulkLoader.getProgress() increase.
 #labels Featured
 
+== Main Author ==
+This library has been developed by [http://www.stimuli.com.br/ Arthur Debert], but it owes a whole lot to the folks who have given input, ideas, criticisms, and bug reports.
+ 
 = Many thanks to =
 
   * *Igor Almeida*: my coworker who has been a thorough beta tester. A couple of months ago he wrote a loading manager class that, while has little resemblance to BulkLoader, provided many insights and a good road map of what works (and what doesn't). He also provided valuable feedback and bug reports.
