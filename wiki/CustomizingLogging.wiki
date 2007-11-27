@@ -16,7 +16,7 @@ var loader : BulkLoader = new BulkLoader("main", 5, BulkLoader.LOG_VERBOSE)
 var loader : BulkLoader = new BulkLoader("main", 5, BulkLoader.LOG_ERROR)
 }}}
 
-Or you can set the static logLevel property at any time:
+Or you can set the logLevel property at any time:
 {{{
 BulkLoader.logLevel = BulkLoader.LOG_INFO;
 }}}
@@ -42,7 +42,7 @@ BulkLoader's default logging is LOG_ERRORS. It's a reasonable level, since it wi
     
 == Using your own logging function == 
 If you'd rather do something else with the messages BulkLoader logs, you can specify you own logging function.
-Just set the BulkLoader.logFunction static property to another function:
+Just set the BulkLoader.logFunction property to another function:
 {{{
 BulkLoader.logFunction = myLogger;
 
