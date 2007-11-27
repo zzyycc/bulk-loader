@@ -1,0 +1,8 @@
+#summary A short description of changes to source code / documentation.
+#labels Featured
+
+* revision 61 : 0.9 *
+
+_2007-11-26 23:07:16 -0200_
+
+- logLevel and logFunction are instance properties instead of static.
