@@ -3,18 +3,6 @@
 
 = Project Status =
 
-I've used !BulkLoader in a couple of projects. It's still under development but can be considered to be stable and reliable. 
+Revision 61 is labeled as version 0.9. From now on we'll do eventual bug fixes until we reach 1.0.
 
-
-= Details =
-
-The aim of the next few revisions is to achieve API stability (we are pretty close to that). Once that is reached, we'll release version 0.9 and then fix eventual bugs until we get to 1.0.
-
-If you find a bug, please let me know using the [http://code.google.com/p/bulk-loader/issues/list issue tracker] at google code.
-
-
-
- 
- 
- 
- 
+Bulk loader has been used in a few commercial projects, and is considered stable.
