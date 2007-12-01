@@ -1,8 +1,12 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
-* revision 61 : 0.9 *
+  * *revision 65 : 0.9 * : _2007-12-01 23:07:16 -0200_
+  # _FIXED_ documentation on LOADER_TYPES, thanks  szemraj.rafal;
+  # _FIXED_ bug on error handling, thanks Igor Almeida;
+  # _IMPLEMENTED_ video and sound types to reflect the players new capabilities (f4v, f4a, etc), thanks [http://www.zeh.com.br zeh];
+  # _IMPLEMENTED_ the "pausedAtStart" property on add for pausing video instances when load operation has begun;
+  # _FIXED_ The OPEN ("open") event was not firering when a request has been opened.
 
-_2007-11-26 23:07:16 -0200_
-
-- logLevel and logFunction are instance properties instead of static.
+  * *revision 61 : 0.9 * : _2007-11-26 23:07:16 -0200_
+  # _CHANGED_ logLevel and logFunction are instance properties instead of static.
