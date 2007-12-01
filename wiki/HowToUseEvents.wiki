@@ -109,3 +109,6 @@ You can also listen for HTTPStatusEvent for each item. Although the player is no
 
 An event of name "httpStatus" (BulkLoader.HTTP_STATUS  ) is fired when an item has failed to load.
 The event type is  HTTPStatusEvent.
+
+== Open ==
+An event of name "open"(BulkLoader.OPEN) is fired when a connection has been opened. In streaming items (sound and video) the content can be used right away.
