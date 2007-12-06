@@ -1,6 +1,10 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
+  * *revision 71 : 0.9.2 * : _2007-12-01 01:07:16 -0200_
+  # Added helper methods to change an item priority after an item has been added. Thanks toby (lowpitch) for the report.
+  # Added helper method to resort the queue by priority.
+
   * *revision 69 : 0.9.2 * : _2007-12-01 00:07:16 -0200_
   # Changed the visibility of properties and methods from LoadingItem. Most things were public and this gave the idea that the LoadingItem was to be used stand alone.
   # Created public accessors for type and id in LoadingItem.
