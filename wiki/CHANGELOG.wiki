@@ -1,7 +1,12 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
-  * *revision 65 : 0.9 * : _2007-12-01 23:07:16 -0200_
+  * *revision 69 : 0.9.2 * : _2007-12-01 00:07:16 -0200_
+  # Changed the visibility of properties and methods from LoadingItem. Most things were public and this gave the idea that the LoadingItem was to be used stand alone.
+  # Created public accessors for type and id in LoadingItem.
+  # Documentation improvments
+
+  * *revision 65 : 0.9.1 * : _2007-12-05 23:07:16 -0200_
   # _FIXED_ documentation on LOADER_TYPES, thanks  szemraj.rafal;
   # _FIXED_ bug on error handling, thanks Igor Almeida;
   # _IMPLEMENTED_ video and sound types to reflect the players new capabilities (f4v, f4a, etc), thanks [http://www.zeh.com.br zeh];
