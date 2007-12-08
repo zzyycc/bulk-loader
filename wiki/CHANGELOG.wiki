@@ -1,5 +1,9 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
+  * *revision 75 : 0.9.2.2 * : _2007-12-08 02:07:16 -0200_
+  # Created accessor for itens.
+  # Exposed isLoaded in LoadingItem
+
   * *revision 73 : 0.9.2.1 * : _2007-12-01 02:07:16 -0200_
   # Fixed bug in removeFailedItems and removeStoppedItems, thanks [http://www.yooba.se/ Stefan Kratz]
 
