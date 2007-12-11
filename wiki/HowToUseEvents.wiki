@@ -21,7 +21,7 @@ background.addEventListener(BulkLoader.COMPLETE, onAllLoaded);
 function onAllLoaded(evt : BulkProgressEvent):void{
     // all items have been loaded!
     trace(evt.
-  trace(evt.percentLoaded) ; // percentage will be 1)
+  trace(evt.loadedPercent) ; // percentage will be 1)
     var bg : Bitmap = bulkInstance.getBitmap("background.jpg");
     addChild(bg);
 }
