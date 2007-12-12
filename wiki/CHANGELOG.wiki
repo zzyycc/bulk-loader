@@ -1,6 +1,12 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
+  * *revision 83 : 0.9.2.2 * : _2007-12-11 21:07:16 -0200_
+  # _IMPLEMENTED_ method for getting progress for an arbitrary set of items.
+
+  * *revision 82 : 0.9.2.2 * : _2007-12-11 17:07:16 -0200_
+  # _FIXED_ bug where netConnection would get garbage collected and freeze videos.
+
   * *revision 78 : 0.9.2.2 * : _2007-12-09 02:07:16 -0200_
   # _IMPLEMENTED_ highestPriority, thanks pedr.browne.
 
