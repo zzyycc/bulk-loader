@@ -113,3 +113,6 @@ The event type is  HTTPStatusEvent.
 
 == Open ==
 An event of name "open"(BulkLoader.OPEN) is fired when a connection has been opened. In streaming items (sound and video) the content can be used right away.
+
+== CAN_BEGIN_PLAYING ==
+An event of name "canBeginPlaying" (BulkLoader.CAN_BEGIN_PLAYING) is fired for video objects when the download speed is enough that it should be possible for video playback to begin without any interruptions. This event will only fire once.
