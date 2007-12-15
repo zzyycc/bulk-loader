@@ -1,5 +1,9 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
+  * *revision 85 : 0.9.3.0 * : _2007-12-15 21:07:16 -0200_
+  # _IMPLEMENTED_ the loadNow method to force immediate loading.
+  # _IMPLEMENTED_ the CAN_BEGIN_PLAY event for NetStream objects to flag when a video can begin playback and is expected to stream without interruptions.
+  # _FIXED_ bug where the bulk event for all items loaded would fire before the last COMPLETE event for an individual item, thanks [http://www.jensfranke.com Jens Franke].
 
   * *revision 83 : 0.9.2.2 * : _2007-12-11 21:07:16 -0200_
   # _IMPLEMENTED_ method for getting progress for an arbitrary set of items.
