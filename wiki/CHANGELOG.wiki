@@ -1,5 +1,9 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
+
+  * *revision 90 : 0.9.3.0 * : _2007-12-17 21:07:16 -0200_
+    * _IMPLEMENTED_ convenience method getAVM1Movie , thanks profilin54.
+
   * *revision 88 : 0.9.3.0 * : _2007-12-16 21:07:16 -0200_
     * _IMPLEMENTED_ VERSION constant to aid in debugging.
 
