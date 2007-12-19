@@ -1,5 +1,8 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
+  
+  * *revision 92 : 0.9.3.0 * : _2007-12-17 21:07:16 -0200_
+    * _FIXED_ bug where videos with pausedAtStart would loose their meta data information. Thanks Renato Inamine.
 
   * *revision 90 : 0.9.3.0 * : _2007-12-17 21:07:16 -0200_
     * _IMPLEMENTED_ convenience method getAVM1Movie , thanks profilin54.
