@@ -1,6 +1,11 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
+ * *revision 99 : 0.9.4.0 * : _2008-01-06 21:07:16 -0200_
+   * _FIXED_ bug that wouldn't allow sound items to be accessed when streaming had begun but not finished, thank Nick Terry for the bug report.
+   * _IMPLEMENTED_ Lazy loading machinery, that allows bulk loaders to be defined in external files (xml) and loaded at runtime. Thanks Dimitar Genov for the code contribution.
+   * _ADDED_ examples for basic usage + serialized loaders.
+
   * *revision 95 : 0.9.3.0 * : _2007-12-28 21:07:16 -0200_
     * _FIXED_ bug where START event would fire before a sound content would be accessible, thanks Nick Terry.
   * *revision 92 : 0.9.3.0 * : _2007-12-17 21:07:16 -0200_
