@@ -5,6 +5,7 @@
 This library has been developed by [http://www.stimuli.com.br/ Arthur Debert], but it owes a whole lot to the folks who have given input, ideas, criticisms, and bug reports.
  
 = Many thanks to =
+  * *Dimitar Genov* who besides having great design discussion, implemented general cleanup code and the code creating bulk loaders from external files (xml).
 
   * *Igor Almeida*: my coworker who has been a thorough beta tester. A couple of months ago he wrote a loading manager class that, while has little resemblance to BulkLoader, provided many insights and a good road map of what works (and what doesn't). He also provided valuable feedback and bug reports.
 
