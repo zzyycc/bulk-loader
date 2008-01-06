@@ -1,0 +1,108 @@
+#summary How to use external files to define items to be loaded.
+
+**new in svn trunk**
+
+=== Defining Loading assts in External Files ===
+
+BulkLoader has a facitily to define items to be loaded in external files.
+Currently, you can define a serialized loader in a xml file, but soon we'll have a json backend as well.
+
+It's very simple to use.
+{{{
+	// create a lazy loader passing the url to the xml file as a String
+	public var lazy : LazyXMLLoader = new LazyXMLLoader("sample-lazy.xml");
+	lazy.addEventListener(Event.COMPLETE, onLazyLoaded);
+    lazy.addEventListener(ProgressEvent.PROGRESS, onLazyProgress);
+    lazy.start();
+
+	public function onLazyLoaded(evt : Event) : void{
+        trace("serialized data is ready!")
+        bulkLoader = evt.target.bulkLoader;
+        bulkLoader.addEventListener(BulkLoader.COMPLETE, onAllLoaded);
+        bulkLoader.addEventListener(BulkLoader.PROGRESS, onAllProgress);
+        bulkLoader.start();
+    }
+
+    public  function onLazyProgress(evt: ProgressEvent) : void{
+		// this is the progress handler for the serialized xml file
+        trace("lazy progress", evt.bytesLoaded, evt.bytesTotal, evt.bytesLoaded/ evt.bytesTotal);
+    }
+}}}
+
+The basic xml format is to have each property defined by a xml node and the files to load as "file" nodes inside a "files" node. A simple xml file:
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<BulkLoader >
+	<name>mainLoader</name>
+	<numConnections>5</numConnections>
+	<logLevel>1</logLevel>
+	<files>
+		<file>
+			<url>http://www.emptywhite.com/bulkloader-assets/cats.jpg</url>
+			<id>bg</id>
+		</file>
+		<file>
+			<maxTries>8.5</maxTries>
+			<url>http://www.emptywhite.com/bulkloader-assets/shoes.jpg</url>
+			<id>photo1</id>
+		</file>
+		<file>
+			<preventCache>true</preventCache>
+			<weight>2</weight>
+			<url>http://www.emptywhite.com/bulkloader-assets/samplexml.xml</url>
+			<id>config</id>
+		</file>
+		<file priority="-100">
+			<priority>-100</priority>
+			<url>http://www.emptywhite.com/bulkloader-assets/movie.flv</url>
+			<pausedAtStart>yes</pausedAtStart>
+			<id>the-video</id>
+		</file>
+		<file>
+			<id>soundtrack</id>
+			<url>http://www.emptywhite.com/bulkloader-assets/chopin.mp3</url>
+			<priority>100</priority>
+			<headers>
+				<header>
+					<name>Auth</name>
+					<value>somebody!</value>
+				</header>
+			</headers>
+		</file>
+	</files>
+</BulkLoader>
+
+}}}
+
+=== Defining event handlers in external files. === 
+
+You can also define event handlers in the xml file.
+In order to do so, instead of using a LazyXMLLoader, you can subclass LazyXMLLoader, and define the handlers as functions of your subclass:
+{{{
+package {
+    import br.com.stimuli.loading.*;
+    import flash.events.*;
+
+    class MyXMLLoader extends LazyXMLLoader {
+	    function MyXMLLoader(url : *){
+		    super(url);
+	    }
+	    
+	    public function completeHandlerFromXML(evt : Event) : void{
+    	    trace("the bulk loader COMPLETE event defined from the xml has fired");
+    	}
+	}
+}
+}}}
+
+Then on the xml, you define a <complete><completeHandlerFromXML/complete> .
+You can use your class the same way you'd use the stock LazyXMLLoader class:
+{{{
+lazy  = new MyXMLLoader("sample-lazy.xml");
+lazy.addEventListener(Event.COMPLETE, onLazyLoaded);
+lazy.addEventListener(ProgressEvent.PROGRESS, onLazyProgress);
+lazy.start();
+}}}
+
+You can also define event handlers for each individual files as well.
+The available events are BulkLoader.COMPLETE, BulkLoader.PROGRESS, BulkLoader.ERROR.
