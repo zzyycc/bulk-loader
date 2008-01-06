@@ -2,7 +2,7 @@
 
 **new in svn trunk**
 
-=== Defining Loading assts in External Files ===
+=== Defining Loading assets in External Files ===
 
 BulkLoader has a facitily to define items to be loaded in external files.
 Currently, you can define a serialized loader in a xml file, but soon we'll have a json backend as well.
