@@ -16,7 +16,7 @@ var bulkInstance = new BulkLoader("main");
 bulkInstance.add("main.swf");
 bulkInstance.add("config.xml");
 bulkInstance.add("background.jpg");
-background.addEventListener(BulkLoader.COMPLETE, onAllLoaded);
+bulkInstance.addEventListener(BulkLoader.COMPLETE, onAllLoaded);
 
 function onAllLoaded(evt : BulkProgressEvent):void{
     // all items have been loaded!
