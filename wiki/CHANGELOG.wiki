@@ -1,6 +1,9 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
+ * *revision 107 : 0.9.4.1 * : _2008-01-14 21:07:16 -0200_
+   * _FIXED_ bug where adding items with the same url and without an id property would cause the items to be added more than once, thanks Jeff.
+
  * *revision 99 : 0.9.4.0 * : _2008-01-06 21:07:16 -0200_
    * _FIXED_ bug that wouldn't allow sound items to be accessed when streaming had begun but not finished, thank Nick Terry for the bug report.
    * _IMPLEMENTED_ Lazy loading machinery, that allows bulk loaders to be defined in external files (xml) and loaded at runtime. Thanks Dimitar Genov for the code contribution.
