@@ -1,6 +1,9 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
+  * *revision 108 : 0.9.4.2 * : _2008-01-29 21:07:16 -0200_
+    * _FIXED_ bug where removeAll would not allow for the addition of new items, thanks [http://www.jensfranke.com Jens Franke].
+
  * *revision 107 : 0.9.4.1 * : _2008-01-14 21:07:16 -0200_
    * _FIXED_ bug where adding items with the same url and without an id property would cause the items to be added more than once, thanks Jeff.
 
@@ -11,6 +14,7 @@
 
   * *revision 95 : 0.9.3.0 * : _2007-12-28 21:07:16 -0200_
     * _FIXED_ bug where START event would fire before a sound content would be accessible, thanks Nick Terry.
+
   * *revision 92 : 0.9.3.0 * : _2007-12-17 21:07:16 -0200_
     * _FIXED_ bug where videos with pausedAtStart would loose their meta data information. Thanks Renato Inamine.
 
