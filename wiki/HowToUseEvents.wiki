@@ -34,7 +34,7 @@ A few observations about the complete event:
 
 == Progress == 
 When any asset fires a progress event, BulkLoader will fire the progress (BulkLoader.PROGRESS, ProgressEvent.PROGRESS) event.
-The event name is : "progress" (BulkLoader.PROGRESS, ProgressEvent.PROGRESS).
+The event name is : "progress" (BulkLoader.PROGRESS, BulkLoader.PROGRESS).
 The event type is a BulkProgressEvent). See the ReportingLoadingStatus page for more information.
 
 == Error == 
