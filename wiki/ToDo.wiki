@@ -1,10 +1,12 @@
 #summary The laundry list
 
 ===Testing===
-  * memory management: check clearing works as expected
-  * creation of loading types at run time
+  * Create a comprehensive test suite, so I can refactor code without fear of breaking stuff.
+  * Add a "checkPolicy" to netstreams
 
   
 ===Features===
-  * Speed meter
+  * Chained loaders (an item that depends on multiples loads)
+  * Refactor of LoadingItem so it can be extended easily.
+  * JSON backend for serialized loading items.
   
