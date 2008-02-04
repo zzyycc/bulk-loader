@@ -1,6 +1,9 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
+  * *revision 111 : 0.9.4.2 * : _2008-02-04 21:07:16 -0200_
+    * _FIXED_ implemented work around a FDT parser's bug.
+
   * *revision 108 : 0.9.4.2 * : _2008-01-29 21:07:16 -0200_
     * _FIXED_ bug where removeAll would not allow for the addition of new items, thanks [http://www.jensfranke.com Jens Franke].
 
