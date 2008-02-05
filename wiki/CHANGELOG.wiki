@@ -1,6 +1,9 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
+  * *revision 114 : 0.9.4.2 * : _2008-02-05 21:07:16 -0200_
+    * _FIXED_ bug (issue 13) where adding an additional item on the onComplete handler would raise an error, thanks [http://kelvinluck.com/ Kelvin Luck].
+
   * *revision 111 : 0.9.4.2 * : _2008-02-04 21:07:16 -0200_
     * _FIXED_ implemented work around a FDT parser's bug.
 
