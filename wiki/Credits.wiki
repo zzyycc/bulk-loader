@@ -4,9 +4,22 @@
 == Main Author ==
 This library has been developed by [http://www.stimuli.com.br/ Arthur Debert], but it owes a whole lot to the folks who have given input, ideas, criticisms, and bug reports.
  
-= Many thanks to =
+== Many thanks to ==
   * *Dimitar Genov* (dimitar71 at hotmail.com ) who besides having great design discussion, implemented general cleanup code and the code creating bulk loaders from external files (xml).
 
   * *Igor Almeida*: my coworker who has been a thorough beta tester. A couple of months ago he wrote a loading manager class that, while has little resemblance to BulkLoader, provided many insights and a good road map of what works (and what doesn't). He also provided valuable feedback and bug reports.
 
   * [http://www.zeh.com.br/ Zeh]: in long emails Zeh has given valuable ideas and discussed a few key issues Having Zeh give you design ideas is (to steal a phrase from [http://www.paulgraham.com/ Paul Graham]) like having Mick Jagger playing on your son's Bar Mitzvah. 
+
+== Thanks to ==
+People who sent bug report, patches, ideas and generally improved bulkloader:
+  * Kelvin Luck. 
+  * Jens Franke. 
+  * Jeff. 
+  * Nick Terry
+  * Renato Inamine. 
+  * profilin54. 
+  * pedr.browne. 
+  * Stefan Kratz 
+  * toby (lowpitch) 
+  * szemraj.rafal;
