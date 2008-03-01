@@ -11,6 +11,8 @@ This library has been developed by [http://www.stimuli.com.br/ Arthur Debert], b
 
   * [http://www.zeh.com.br/ Zeh]: in long emails Zeh has given valuable ideas and discussed a few key issues Having Zeh give you design ideas is (to steal a phrase from [http://www.paulgraham.com/ Paul Graham]) like having Mick Jagger playing on your son's Bar Mitzvah. 
 
+ * [http://www.pedromoraes.net Pedro Moraes] For great feedback and feature suggestions.
+
 == Thanks to ==
 People who sent bug report, patches, ideas and generally improved bulkloader:
   * Kelvin Luck. 

@@ -27,7 +27,7 @@ loader.add("background.jpg", {id:"bg"});
 loader.add("/some-web-services?size=Large", {type:"image"});
 // add an item that should be loaded first (higher priority):
 loader.add("/data/config.xml", {priority:20});
-// add a max trie number (defaults to 3)
+// add a max tries number (defaults to 3)
 loader.add("/unreliable-web-services.xml", {maxTries:6});
 // you can also use a URLRequest object , this will load from a POST request
 var postRequest : URLRequest = new URLRequest("/save-prefs.php");

@@ -3,6 +3,6 @@
 
 = Project Status =
 
-Revision 61 is labeled as version 0.9. From now on we'll do eventual bug fixes until we reach 1.0.
+Revision 162 is labeled as version 0.9.9 From now on we'll do eventual bug fixes until we reach 1.0.
 
 Bulk loader has been used in a few commercial projects, and is considered stable. If you are confortable using svn, I recommend to follow trunk, as the API is stable an very few (if any) backwards incompatible changes should happened. Else, I'll try to keep the downloadable version up to date as much as possible.
