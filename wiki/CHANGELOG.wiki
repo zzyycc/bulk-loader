@@ -23,10 +23,10 @@
 	* fixed imports for lazy items.
 	* rep layout change (took tests out of main rep, added modified asunit)
 	* documented new features
-	* changed everything to public, with _ prefixed to internal items,
+	* changed everything to public, with nderscore prefixed to internal items,
 	* rep layout change (took tests out of main rep, added modified asunit)
 	* documented new features
-	* changed everything to public, with _ prefixed to internal items,
+	* changed everything to public, with underscore prefixed to internal items,
 	* added test for onComplete and progress never firing more than once / after all is loaded
 	* Added autoId feature and tests (thanks Pedro Moraes)
 	* Added tests for loadNow
@@ -47,7 +47,7 @@
 	* re-implemented code that warns of unused properties
 	* tested code above
 	* new tests for start, logLevel.
-	* BACKWARDS INCOMPATIBLE CHANGE: _hasItemInBulkLoader is now a static method (makes more sense this way).
+	* BACKWARDS INCOMPATIBLE CHANGE: hasItemInBulkLoader is now a static method (makes more sense this way).
 	* created  createUniqueNamedLoader function
 	* tested above
 	* created default static consts for logLevel and numConnections
