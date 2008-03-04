@@ -1,67 +1,71 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
+  * revision 171 : 0.9.9.1 : _2008-03-03 0:44:16 -0300_:
+        * code cleanup
+        * fixed bug when removing all and they adding new items (loading would not start again), thanks Jens Franke. (and added regression test for that)
+        * allowed num connections to change in start even after num connections is made
 
-  * revision 163 : 0.9.9.0 : _2008-02-01 0:44:16 -0300_:
-	* Merged li-refactor branch:commits:
-	* refactored serialized loaderds to use simple inheritance.
-	* fixed item creation bug in lazy loaders
-	* fixed item creation bug in lazy loaders
-	* created getters and setter to make sure percentage loaded will never be NaN or Infinity
-	* refactored LazyBulkLoader to use a start instead of a fetch method (much cleaner)
-	* updated lazy loader example
-	* basic implementation of LazyJSONLoader
-	* fixed JSONLazyLoader
-	* fixed LazyXMLLoaderTest bug on internals
-	* added tests for highestPriority, order on add
-	* BACKWARDS INCOMPATIBLE CHANGE: more than one item with the same url.
-	* refactored serialized loaderds to use simple inheritance.
-	* refactored lazy loader as a proxy
-	* improved tests for lazy loaders
-	* added base tests for lazy loaders
-	* added to lazy xml loader: string subs,  auto id
-	* fixed spelling error on numConnection
-	* fixed imports for lazy items.
-	* rep layout change (took tests out of main rep, added modified asunit)
-	* documented new features
-	* changed everything to public, with nderscore prefixed to internal items,
-	* rep layout change (took tests out of main rep, added modified asunit)
-	* documented new features
-	* changed everything to public, with underscore prefixed to internal items,
-	* added test for onComplete and progress never firing more than once / after all is loaded
-	* Added autoId feature and tests (thanks Pedro Moraes)
-	* Added tests for loadNow
-	* Added string substitution feature (thanks Pedro Moraes) and tests
-	* added test for loadNow
-	* refactored stats code (into LoadingItem)
-	* BACKWARDS INCOMPATIBLE CHANGE: renamed <BulkLoader>.traceStats() to <BulkLoader>.getStats()
-	* added tests for resume, resumeAll and pauseAll.
-	* code cleanup
-	* added tests for RemovePaused and RemovedFailed
-	* tested BulkError
-	* added tests for type guessing
-	* major work on testing logic
-	* code cleanup
-	* fixed bug in type specific properties , fixed those for video items
-	* refactored type system: much cleaner now
-	* tests for isLoaded
-	* re-implemented code that warns of unused properties
-	* tested code above
-	* new tests for start, logLevel.
-	* BACKWARDS INCOMPATIBLE CHANGE: hasItemInBulkLoader is now a static method (makes more sense this way).
-	* created  createUniqueNamedLoader function
-	* tested above
-	* created default static consts for logLevel and numConnections
-	* added test and item for XML
-	* added tests for text items (and passes)
-	* merged upstream bug fix for lazy items (rev 123)
-	* test improvements: IOError works (and passes) on audio, video and loaders.
-	* tests passes for Audio
-	* test for httpStatus work as expected
-	* added test flas
-	* test improvments
-	* functionality works
-	* started test suite
-	* Broke dir strucure for packages
+  * revision 163 : 0.9.9.0 : _2008-03-01 0:44:16 -0300_:
+        * Merged li-refactor branch:commits
+        * refactored serialized loaderds to use simple inheritance.
+	    * fixed item creation bug in lazy loaders
+	    * fixed item creation bug in lazy loaders
+        * created getters and setter to make sure percentage loaded will never be NaN or Infinity
+        * refactored LazyBulkLoader to use a start instead of a fetch method (much cleaner)
+        * updated lazy loader example
+        * basic implementation of LazyJSONLoader
+        * fixed JSONLazyLoader
+        * fixed LazyXMLLoaderTest bug on internals
+        * added tests for highestPriority, order on add
+        * BACKWARDS INCOMPATIBLE CHANGE: more than one item with the same url.
+        * refactored serialized loaderds to use simple inheritance.
+        * refactored lazy loader as a proxy
+        * improved tests for lazy loaders
+        * added base tests for lazy loaders
+        * added to lazy xml loader: string subs,  auto id
+        * fixed spelling error on numConnection
+        * fixed imports for lazy items.
+        * rep layout change (took tests out of main rep, added modified asunit)
+        * documented new features
+        * changed everything to public, with nderscore prefixed to internal items,
+        * rep layout change (took tests out of main rep, added modified asunit)
+        * documented new features
+        * changed everything to public, with underscore prefixed to internal items,
+        * added test for onComplete and progress never firing more than once / after all is loaded
+        * Added autoId feature and tests (thanks Pedro Moraes)
+        * Added tests for loadNow
+        * Added string substitution feature (thanks Pedro Moraes) and tests
+        * added test for loadNow
+        * refactored stats code (into LoadingItem)
+        * BACKWARDS INCOMPATIBLE CHANGE: renamed <BulkLoader>.traceStats() to <BulkLoader>.getStats()
+        * added tests for resume, resumeAll and pauseAll.
+        * code cleanup
+        * added tests for RemovePaused and RemovedFailed
+        * tested BulkError
+        * added tests for type guessing
+        * major work on testing logic
+        * code cleanup
+        * fixed bug in type specific properties , fixed those for video items
+        * refactored type system: much cleaner now
+        * tests for isLoaded
+        * re-implemented code that warns of unused properties
+        * tested code above
+        * new tests for start, logLevel.
+        * BACKWARDS INCOMPATIBLE CHANGE: hasItemInBulkLoader is now a static method (makes more sense this way).
+        * created  createUniqueNamedLoader function
+        * tested above
+        * created default static consts for logLevel and numConnections
+        * added test and item for XML
+        * added tests for text items (and passes)
+        * merged upstream bug fix for lazy items (rev 123)
+        * test improvements: IOError works (and passes) on audio, video and loaders.
+        * tests passes for Audio
+        * test for httpStatus work as expected
+        * added test flas
+        * test improvments
+        * functionality works
+        * started test suite
+        * Broke dir strucure for packages
 	
   * *revision 123 : 0.9.4.2 * : _2008-02-13 0:44:16 -0200_
     * _FIXED_ bug (issue 20) where serialized xml lazy loader would not respect the name associated with the xml file, thanks chover2
