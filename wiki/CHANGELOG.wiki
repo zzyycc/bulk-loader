@@ -1,5 +1,13 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
+  
+  * revision 176 : 0.9.9.5 : _2008-03-06 2:44:16 -0300_:
+    * _FIXED_ issue 23, thanks t. izukawa. (bytesTotalCurrent always 0 on events)
+    * _ADDED_ tests for bytesTotalCurrent 
+
+  * revision 175 : 0.9.9.4 : _2008-03-06 2:44:16 -0300_:
+    * _FIXED_ issue 24 , thanks Marcelo Rigon (isSWF always returning false)
+
   * revision 174 : 0.9.9.2 : _2008-03-03 2:44:16 -0300_:
     * decreased chance of name collision on preventCache
 
