@@ -1,6 +1,8 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
-  
+  * revision 179 : 0.9.9.5 : _2008-03-06 2:44:16 -0300_:
+    * _ADDED_ aditional tests that LoaderItems can access content on the individual item event loop  
+
   * revision 176 : 0.9.9.5 : _2008-03-06 2:44:16 -0300_:
     * _FIXED_ issue 23, thanks t. izukawa. (bytesTotalCurrent always 0 on events)
     * _ADDED_ tests for bytesTotalCurrent 
