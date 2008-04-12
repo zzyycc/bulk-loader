@@ -1,5 +1,7 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
+  * revision 189 : 0.9.9.6 : _2008-04-12 2:44:16 -0300_:
+    * _ADDED_ tests for CAN_BEGIN_PLAYING events on VideoItem.
 
   * revision 187 : 0.9.9.6 : _2008-04-04 2:44:16 -0300_:
     * _FIXED_ issue 28  (numConnections loading one more than specified), thanks schickm.
