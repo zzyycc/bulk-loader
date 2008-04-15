@@ -1,5 +1,9 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
+
+  * revision 191 : 0.9.9.6 : _2008-04-14 2:44:16 -0300_:
+    * _ADDED_ clear method that removes the loader from the static dict, and removeAll does not render the bulkloader invalid anymore, thanks 7 days of rain (issue 29).
+
   * revision 189 : 0.9.9.6 : _2008-04-12 2:44:16 -0300_:
     * _ADDED_ tests for CAN_BEGIN_PLAYING events on VideoItem.
 
