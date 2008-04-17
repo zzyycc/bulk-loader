@@ -26,4 +26,4 @@ People who sent bug report, patches, ideas and generally improved bulkloader:
   * toby (lowpitch) 
   * szemraj.rafal;
   * Murkyl
-  * www.winx.ws
+  * [http://www.winx.ws Alex Winx]
