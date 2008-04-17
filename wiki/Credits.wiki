@@ -25,3 +25,4 @@ People who sent bug report, patches, ideas and generally improved bulkloader:
   * Stefan Kratz 
   * toby (lowpitch) 
   * szemraj.rafal;
+  * Murkyl
