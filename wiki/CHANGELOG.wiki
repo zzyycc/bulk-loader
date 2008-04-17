@@ -1,6 +1,9 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
+  * revision 199 : 0.9.9.6 : _2008-04-16 2:44:16 -0300_:
+    * _ADDED_ BinaryItem and related changes, thanks [http://www.winx.ws alex winx]  .
+
   * revision 196 : 0.9.9.6 : _2008-04-16 2:44:16 -0300_:
     * _FIXED_ bug where cleaning listeners for URLItem and XMLItem would fail (thanks Murkyl)
 
