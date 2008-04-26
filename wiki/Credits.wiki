@@ -28,3 +28,5 @@ People who sent bug report, patches, ideas and generally improved bulkloader:
   * Murkyl
   * [http://www.winx.ws Alex Winx]
   * t.izukawa
+  * gstoner
+  * Robby Abaya
