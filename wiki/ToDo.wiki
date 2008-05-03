@@ -2,5 +2,6 @@
 
   
 ===Features===
+  * Connections per host(very important). [http://groups.google.com/group/bulkloader-users/browse_frm/thread/4d57b6f2bec527d2 More info here.]
   * Chained loaders (an item that depends on multiples loads)
   
