@@ -1,13 +1,18 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
-  * revision 206 : 0.9.9.0 : _2008-02-01 0:44:16 -0300_:
-	* _FIXED_ bug where CAN_BEGIN_PLATING would not fire on local files. Thanks  Robby Abaya and gstoner.
+
+
+  * revision 208 : 0.9.9.0 : _2008-05-30 0:44:16 -0300_:
+    *<bulkLoader>.pause will not close items that are fully loaded.    
+
+  * revision 206 : 0.9.9.0 : _2008-04-01 0:44:16 -0300_:
+    * _FIXED_ bug where CAN_BEGIN_PLATING would not fire on local files. Thanks  Robby Abaya and gstoner.
 	
- * revision 205 : 0.9.9.0 : _2008-02-01 0:44:16 -0300_:
-	* _FIXED_ bug when registering new types (issue 34), thanks t.izukawa.
+ * revision 205 : 0.9.9.0 : _2008-04-01 0:44:16 -0300_:
+    * _FIXED_ bug when registering new types (issue 34), thanks t.izukawa.
 	
- * revision 203 : 0.9.9.0 : _2008-02-01 0:44:16 -0300_:
-	* _FIXED_ small typo on class dictionary (issue 35), thanks t.izukawa.
+ * revision 203 : 0.9.9.0 : _2008-04-01 0:44:16 -0300_:
+    * _FIXED_ small typo on class dictionary (issue 35), thanks t.izukawa.
 	
   * revision 199 : 0.9.9.6 : _2008-04-16 2:44:16 -0300_:
     * _ADDED_ BinaryItem and related changes, thanks [http://www.winx.ws alex winx]  .
