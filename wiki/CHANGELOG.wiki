@@ -1,6 +1,8 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
 
+  * revision 210 : 0.9.9.0 : _2008-05-30 0:44:16 -0300_:
+    * _CHANGED_ whichLoaderHasItem will return any loader with an item (loaded or not)
 
   * revision 208 : 0.9.9.0 : _2008-05-30 0:44:16 -0300_:
     *<bulkLoader>.pause will not close items that are fully loaded.    
