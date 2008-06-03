@@ -44,7 +44,7 @@ BulkLoader's default logging is LOG_ERRORS. It's a reasonable level, since it wi
 If you'd rather do something else with the messages BulkLoader logs, you can specify you own logging function.
 Just set the BulkLoader.logFunction property to another function:
 {{{
-BulkLoader.logFunction = myLogger;
+<bulkLoader>.logFunction = myLogger;
 
 function myLogger(msg : String) : void{
   // do sothing with that message here
