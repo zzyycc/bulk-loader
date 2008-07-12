@@ -13,7 +13,7 @@ Examples:
 // verbose: logs everything that happens
 var loader : BulkLoader = new BulkLoader("main", 5, BulkLoader.LOG_VERBOSE)
 // errors only:
-var loader : BulkLoader = new BulkLoader("main", 5, BulkLoader.LOG_ERROR)
+var loader : BulkLoader = new BulkLoader("main", 5, BulkLoader.LOG_ERRORS)
 }}}
 
 Or you can set the logLevel property at any time:
