@@ -116,3 +116,14 @@ An event of name "open"(BulkLoader.OPEN) is fired when a connection has been ope
 
 == CAN_BEGIN_PLAYING ==
 An event of name "canBeginPlaying" (BulkLoader.CAN_BEGIN_PLAYING) is fired for video objects when the download speed is enough that it should be possible for video playback to begin without any interruptions. This event will only fire once.
+
+== SecurityError==
+BulkLoader can handle SecurityErrorEvents. By listening to BulkLoader.SECURITY_ERROR("securityError"), client code can gracefully handle security error events.
+Listeners can be added to each LoadingItem subtype or to the entire BulkLoader object. Please note that if you add an event listener for a LoadingItem but not for BulkLoader, in case the event fires, it will bubble up and result in a unhandled security error. In order to make sure the error never goes unhandled, add a securityError handler to the BulkLoader instance.
+
+This mechanism will catch events thrown on <someLoader>.load operations. 
+Event thrown when trying to access content (such as getBitmapData) is still left to client code to handle.
+
+When using type=image or type=movieclip (which are loaded using a Loader instance), if, when the asset is loaded, accessing it's loader.content throws an error, then BulkLoader will gracefully recover and use a simple Loader instance. This way, you can still add a Loader object to the stage, but won't be able to run code inside of it (for MovieClip instances) or load it as data (transforming to BitmapData instances).
+
+In this case, you can get the Loader instance either using getContent or getDisplayObjecLoader .
