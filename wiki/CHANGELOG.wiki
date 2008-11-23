@@ -1,5 +1,7 @@
 #summary A short description of changes to source code / documentation.
 #labels Featured
+
+Since google code's web interface has a reasonable changeset list for a while, I am not updating this anymore, for more information:  http://code.google.com/p/bulk-loader/source/list .
     * r237 | debert | 2008-11-22 21:45:58 -0200 (Sat, 22 Nov 2008) | 2 lines
      * Fixed bug where progress information (bytesLoaded and bytesTotal) would be broken for mp4 files (issue 57).I am not 100% sure of why this is, but it seems that a mp4 netstreams defaults bytesLoaded to -1 (instead of 0 for FLV's). This would break the check for stream INIT event on VideoItem, never updating the item's status, and therefore the final BulkLoader.getProgressForItems method would not take that VideoItem into consideration. Weird. Thanks for the bug report Chris  meyer
 
