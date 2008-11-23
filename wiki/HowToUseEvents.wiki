@@ -41,22 +41,25 @@ The event type is a BulkProgressEvent). See the ReportingLoadingStatus page for 
 If any of the assets fail to load, BulkLoader will fire an "error" event.
 
 The event name is "error" (BulkErrorEvent.ERROR).
-The event type is BulkErrorEvent. This event has an "error" property that is an array with all the LoadingItem instances that have failed to load on this bulk loader instance.
+The event type is ErrorEvent for both SecurityError and IOError instances.
+
+Error events can be listened to for each item in separate, or full the entire BulkLoader instance. From whithin your error handling method you can obtain more information about the event.
 
 Simple example:
 {{{
 bulkInstance.addEventListener(BulkLoader.ERROR,onError);
 
-function onError(evt : BulkErrorEvent ) : void{
-	trace("an error ocurred when loading");
-	for each (var loadingItem in evt.errors){
-    	 trace(loadingItem, "has failed to load");
-	}
+function onError(evt :ErrorEvent ) : void{
+	var item : LoadingItem = evt.target;
+        trace (item.errorEvent is SecurityErrorEvent); 
+        trace (item.errorEvent is IOError); 
+       trace (evt); // outputs more information 
 }
 }}}
 
 The error event is only fired after the item has the number of retries especified on the maxRetries option (AvailableOptions#maxTries)
 
+Error events will fire as soon as they happen.
 
 == Events for individual items ==
 Besides listening for events on all items as a whole, you can listen to event for each item.
