@@ -14,6 +14,7 @@ The [http://groups.google.com/group/bulkloader-users mailing list] is the place 
 If you are sending code or a bug fix, please:
   * Upload a svn diff file that can be patched cleanly from trunk.
   * Make sure that nothing breaks (running the test suite is a good first step)
+  * Writing test for your code will help a lot.
 
 == Commit access ==
 While I'd love to have more committers to BulkLoader, very few people turn out to have the knowledge and disposition to contribute for a reasonable period of time. If you'd like to become a project member, generally speaking, you'd have to show your commitment. By doing bug reports, helping out on the mailing list, documentation improvements and sending good patches I'll be glad to provide commit privileges.
