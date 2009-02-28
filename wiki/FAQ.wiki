@@ -1,4 +1,5 @@
 #summary FAQ or Frequently Asked Questions
+#labels Featured
 <wiki:toc max_depth="4" />
 
 This is a (not so) short list of the questions asked the most by users. I've tried either to answer them fully, or point to other places where more information is available.
@@ -79,6 +80,4 @@ BulkLoader is an open source project, and as such there are a lot of ways you ca
 This one surprises me, people ask this often. I have had about ten such requests. No one that has asked has ever written patches or contributed to the project in any way.
 Becoming a committer means that you will have full powers to do anything that you'd like, for the good or not. It means that I trust your code 100%. It means that I know you won't break things, that you will always run the test suite before a commit. In short, becoming a committer is a process, and that privilege is the final touch. If you show a history of good contributions (see "How can I contribute?" above), I'll be glad to ask you to become a committer. But as the name implies, a committer takes commitment, you must show that you have the ability and availability to help out. 
 Honestly, I'd love to have other committers. Even though it is a small project, all of it's tasks (writing documentation, mailing list, bug fixes, triaging bug reports ) take time. Many times requests on the mailing list or the issue tracker are left too long without a response, but I simply do not have that much time to devote into it. I'd love to share the work.
-
-
 
