@@ -22,6 +22,9 @@ Note that Marko has a patch the creates a COMPLETE_WITH_ERROR events here ( http
 Yes they are, at least they should be. There are test cases covering it, and if something is broke I'll be glad to fix it.
 The issue here is that BulkLoader will do as much as the runtime allows for resuming. But how much it actually resumes a previously interrupted connection is dependent on other factors such as browser, player version and browser settings. If you are unsure if it is working make a simple test swf, start loading items, and call pauseAll. Then monitor those connections (hhtpfox or better yet webkit's developer panel will show you exactely what is going on).
 
+=== Priorities are crazy ===
+Due to hostname sharding, the way priorities work might be confusing. You can read more on HowPrioritiesAndLoadingOrderWork.
+
 === Something does not work! ===
 Yes it does. Maybe it does not do what you expect, or what you wished it would do. Or maybe there is a bug in your code. 
 Yes, there are bugs in BulkLoader, but most things should really work. If you find that something is not working, just do the best practices for any programming issues:
