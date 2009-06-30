@@ -1,7 +1,8 @@
 #summary The laundry list
 
-  
-===Features===
-  * Connections per host(very important). [http://groups.google.com/group/bulkloader-users/browse_frm/thread/4d57b6f2bec527d2 More info here.]
-  * Chained loaders (an item that depends on multiples loads)
+  At this point, BulkLoader is pretty feature complete.
+The areas where is needs more work are:
+ * The LazyLoaders need to have the deserialization broken into smaller pieces, so that client code can intercept and work on data sources freely.
+ * Documentation improvements. The docs are pretty complete, but it would be nice to have them revised, cross linked where feasible, etc.
+ * Test Suite: although the converage is pretty good, there still is more to test.
   
