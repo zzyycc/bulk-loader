@@ -7,9 +7,9 @@ This is a (not so) short list of the questions asked the most by users. I've tri
 === Is Bulk Loader- bloated? ===
 Yes it is. The inside joke is it should be renamed to BloatedLoader.
 The truth is that, as most things, it started small. Then came features, edge-cases, convenience functions, better structure, and it became big.
-BulkLoader takes about 24kb compiled, which is pretty big for a loading manager. But it's intended audience, are developers with big and complex apps or websites. Most likely they are loading anywhere from 1MB to many megabytes. Under those circumstances, 24kb is justifiable for saving hours of development time.
-A litmus test: if in your project it's more important to save 20kb then gaining many hours of development time, BulkLoader is not a good fit for it.
-Another take : if someone would provide a patch with a clean cut, minimized, version that would still be useful for most people, I'll be glad to take that in. But I can't make how that would look like.
+BulkLoader takes about 16kb compiled, which is pretty big for a loading manager. But it's intended audience, are developers with big and complex apps or websites. Most likely they are loading anywhere from 1MB to many megabytes. Under those circumstances, 16kb is justifiable for saving hours of development time.
+A litmus test: if in your project it's more important to save 10kb then gaining many hours of development time, BulkLoader is not a good fit for it.
+Another take : if someone would provide a patch with a clean cut, minimized, version that would still be useful for most people, I'll be glad to take that in. But I can't forsee what that would look like.
 
 === Progress takes too long to show! BytesLoaded is zero for a long time! ===
 That is, unfortunately not something that BulkLoader can solve for you. A useful progress indication must know the total number of bytes to load, and the flash player can only figure that out once all connections are opened and all response headers have been returned. If you are loading many assets, it will take long. To be more precise, it will only report anything useful when the last item has begun loading, and almost all other items are done loading.  BulkLoader does, however, offers other progress indicators that can help in those cases. Get the full details here: [http://code.google.com/p/bulk-loader/wiki/ReportingLoadingProgress].
