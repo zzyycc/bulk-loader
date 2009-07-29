@@ -1,5 +1,4 @@
 #summary A short description of changes to source code / documentation.
-#labels Featured
 
 Since google code's web interface has a reasonable changeset list for a while, I am not updating this anymore, for more information:  http://code.google.com/p/bulk-loader/source/list .
     * r237 | debert | 2008-11-22 21:45:58 -0200 (Sat, 22 Nov 2008) | 2 lines
