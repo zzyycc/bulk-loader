@@ -66,6 +66,35 @@ var bmp2 : Bitmap = new Bitmap(bulkLoader.getBitmapData("logo").clone()); // thi
 The reason for BulkLoader not doing this automatically, is that there are performance and memory penalties for doing so, so it delegates that option to the user.
 This is true for a variety of loading types. A few can be easily cloned: text, xml, images. DisplayObjects do not allow for easy cloning, so for those cases (swfs, flvs) you might simply add the same urls with different ids.
 
+=== I want to have extra data associated to a key ===
+Sometimes, when using lazyloaders (XML or JSON), you want to stick arbitrary, application data to a given key.
+While BulkLoader does not support that out of the BOX, it's easy enough to extend it. This is a high level overview of how to do it:
+{{{
+class UserDataBulkLoader extends BulkLoader
+
+	public var userData : Dictionary
+	
+	override public function add(key:*, props:*=null) : LoadingItem{
+		if (props.hasOwnProperty('userData')){
+			userData[key] = props.userData;
+		}
+		return super.add(key, props)
+	}
+	
+	override public function remove(key) : Boolean{
+		del userData[key];
+		return super.remove(key);
+	}
+	
+	public function getUserData (key :*) : *{
+		return userData[key];
+	}
+}
+}}}
+The code above is just an implementation roadmap, and hasn't been tested, but should get you very close to it.
+If using a xml o json loader, you might have to set it to extend your derived class and make any special arrangements to parse the node to the UserDataBulkLoader.
+	
+
 === I would like to thank you making a donation. ===
 Thank you for your gesture, but I do not accept donations. Honestly, if I though I could get rich with it, I would, but it doesn't look very likely ;). Instead all of the bellow will show you gratitude just fine:
  * A simple thank you email.
