@@ -1,4 +1,5 @@
 #summary Thrid party guides and resources
+#labels Featured
 
 = Introduction =
 
