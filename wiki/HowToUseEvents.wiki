@@ -40,7 +40,7 @@ The event type is a BulkProgressEvent). See the ReportingLoadingStatus page for 
 == Error == 
 If any of the assets fail to load, BulkLoader will fire an "error" event.
 
-The event name is "error" (BulkErrorEvent.ERROR).
+The event name is "error" (ErrorEvent.ERROR).
 The event type is ErrorEvent for both SecurityError and IOError instances.
 
 Error events can be listened to for each item in separate, or full the entire BulkLoader instance. From whithin your error handling method you can obtain more information about the event.
