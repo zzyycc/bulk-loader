@@ -102,7 +102,7 @@ function onBackgroundLoaded(evt : Event) : void{
 
 == Error == 
 An event of name "error" (BulkLoader.ERROR ) is fired when an item has failed to load.
-The event type is  BulkErrorEvent.
+The event type is  ErrorEvent.
 
 == Progress == 
 An event of name "progress" (ProgressEvent.PROGRESS ) is fired when the player has received more content for that item.
