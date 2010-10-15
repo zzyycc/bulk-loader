@@ -1,5 +1,7 @@
 #summary Thrid party guides and resources
 #labels Featured
+                                                                                                       
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
 
 = Introduction =
 

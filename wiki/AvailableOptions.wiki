@@ -1,5 +1,7 @@
 #summary Options that provide more control on how to load items
 #labels Phase-Implementation
+                                                              
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
 
 Once you have a BulkLoader instance, you can add items to be loaded.
 

@@ -1,6 +1,8 @@
 #summary How to fetch assets from BulkLoader
 #labels Phase-Implementation
 
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
+
 Once you have created a BulkLoader instance and added items to it, you can fetch those items by a number of ways.
 
 == Getting content from a loading item ==

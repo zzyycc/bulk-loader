@@ -1,6 +1,7 @@
 #summary FAQ or Frequently Asked Questions
 #labels Featured
 <wiki:toc max_depth="4" />
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
 
 This is a (not so) short list of the questions asked the most by users. I've tried either to answer them fully, or point to other places where more information is available.
 

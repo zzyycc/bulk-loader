@@ -1,6 +1,8 @@
 #summary Understanding memory management
 #labels Phase-Implementation
 
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
+
 Memory management can be pretty tricky to get right. If you aren't careful, you will consume more and more memory each item you load. If your website loads many items, this can become an issue.
 
 == How To Clear Memory == 

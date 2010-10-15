@@ -1,6 +1,8 @@
 #summary Understanding events
 #labels Phase-Implementation
 
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
+
 BulkLoader events are divided into two categories:
   * Events for all assets as a group.
   * Events for individual items.

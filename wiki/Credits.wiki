@@ -1,5 +1,7 @@
 #summary People who have helped to make BulkLoader.getProgress() increase.
 #labels Featured
+                                                      
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
 
 == Main Author ==
 This library has been developed by [http://www.stimuli.com.br/ Arthur Debert], but it owes a whole lot to the folks who have given input, ideas, criticisms, and bug reports.

@@ -1,5 +1,7 @@
 #summary How to customize logging.
 
+                                                                                                         
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
 
 BulkLoader comes with a flexible and customizable logging facility.
 

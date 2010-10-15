@@ -1,5 +1,7 @@
 #summary One-How to control (or not) loading order
 
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
+
 BulkLoader has a few useful features to control loading order. To understand how BulkLoader queues order it's items, there are a few things to understand first.
 
 Glossary:

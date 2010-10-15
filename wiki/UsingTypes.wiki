@@ -1,6 +1,8 @@
 #summary How to use types for each object
 #labels Phase-Implementation
 
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
+
 BulkLoader must now what type of asset you are loading. For the most common cases it will discover from the url passed. So when loading a "background.jpg" BulkLoader knows that it must use a Loader instance internally. There are two situations when that will not work:
 
 a) The url offers no clues about the file type:

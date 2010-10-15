@@ -1,6 +1,8 @@
 #summary How to handle progress reports (loading status).
 #labels Phase-Implementation
 
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
+
 BulkLoader has very flexible ways to report the status of loading for it's items.
 
 == By bytes / percentage ==

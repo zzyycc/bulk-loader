@@ -1,5 +1,6 @@
 #summary How to learn the features of BulkLoader
 #labels Phase-Implementation,Featured
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
 
 If you are getting started, the GettingStarted will get you up and running in no time.
 

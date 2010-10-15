@@ -1,5 +1,6 @@
 #summary Road map
 #labels Phase-Design
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
 
 = Project Status =
 

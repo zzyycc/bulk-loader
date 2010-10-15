@@ -1,4 +1,6 @@
 #summary How to use external files to define items to be loaded.
+                                                               
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
 
 **new in svn trunk**
 

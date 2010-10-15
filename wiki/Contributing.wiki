@@ -1,4 +1,7 @@
 #summary How to contribute to BulkLoader
+
+THIS WIKI HAS MOVED to the new github page, please access it at [http://github.com/arthur-debert/BulkLoader/wiki] .
+
 BulkLoader is an open source project and there are lots of things you can do to help.
 
 == Bug reports ==
